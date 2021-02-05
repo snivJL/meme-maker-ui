@@ -2,7 +2,7 @@ import * as types from "../constants/memes.constants";
 
 const initialState = {
   memes: [],
-  loading: false,
+  loading: true,
   error: null,
 };
 const memesReducer = (state = initialState, action) => {
