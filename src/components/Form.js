@@ -34,7 +34,10 @@ const Form = () => {
   };
   const baseForm = (type) => {
     return (
-      <form className="flex space-y-3 w-84 flex-col py-5 bg-gray-100 text-gray-600">
+      <form
+        onSubmit={onSubmit}
+        className="flex space-y-3 w-84 flex-col py-5 bg-gray-100 text-gray-600"
+      >
         <label htmlFor="" className="font-bold px-2">
           {`Text ${type}`}
         </label>
@@ -96,7 +99,7 @@ const Form = () => {
         </div>
         {type === 2 ? (
           <button
-            onClick={onSubmit}
+            // onClick={onSubmit}
             type="submit"
             className="bg-blue-400 text-white w-full py-2"
           >
